@@ -1,6 +1,5 @@
 # import library socket karena menggunakan IPC socket
 import socket as sc
-import os
 
 # definisikan IP server tujuan file akan diupload
 HOST = "192.168.1.8"
@@ -25,8 +24,6 @@ try:
     # baca file tersebut sebesar buffer 
     byte = f.read(buffer_size)
 
-    i = 0
-
     # selama tidak END OF FILE; pada pyhton EOF adalah b''
     while byte != b'':
         # kirim hasil pembacaan file
@@ -35,8 +32,6 @@ try:
         # baca sisa file hingga EOF
         byte = f.read(buffer_size)
 
-        print(i/os.path.getsize("file_diupload.txt")*100,"%")
-        i += buffer_size
 finally:
     print ("end sending")
     

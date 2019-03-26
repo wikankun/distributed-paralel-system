@@ -45,3 +45,4 @@ f.close()
 s.close()
 
 # tutup koneksi
+conn.close()

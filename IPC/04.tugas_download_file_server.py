@@ -2,7 +2,7 @@
 import socket as sc
 
 # definisikan IP untuk binding
-HOST = "192.168.1.8"
+HOST = "192.168.1.3"
 
 # definisikan port untuk binding
 PORT = 4044
@@ -11,7 +11,7 @@ PORT = 4044
 buffer_size = 1024
 
 # buat socket (bertipe UDP atau TCP?)
-s = sc.socket(sc.AF_INET, sc.SOCK_DGRAM)
+s = sc.socket(sc.AF_INET, sc.SOCK_STREAM)
 
 # lakukan binding ke IP dan port
 s.bind((HOST, PORT))
@@ -25,7 +25,7 @@ print ('Connection address:', addr)
 
 # buka file bernama "file_didownload.txt
 # masih hard code, file harus ada dalam folder yang sama dengan script python
-f = open("file_didownload.txt", "rb")
+f = open("IPC/file_didownload.txt", "rb")
 
 try:
     # baca file tersebut sebesar buffer 
@@ -34,7 +34,7 @@ try:
     # selama tidak END OF FILE; pada pyhton EOF adalah b''
     while byte != b'':
         # kirim hasil pembacaan file dari server ke client
-        s.send(byte)
+        conn.send(byte)
         
         # baca sisa file hingga EOF
         byte = f.read(buffer_size)
@@ -49,3 +49,4 @@ finally:
 s.close()
 
 # tutup koneksi
+conn.close()
