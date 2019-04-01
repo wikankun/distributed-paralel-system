@@ -2,7 +2,7 @@
 import socket as sc
 
 # definisikan IP server tujuan file akan diupload
-HOST = "192.168.1.3"
+HOST = "192.168.1.15"
 
 # definisikan port number proses di server
 PORT = 4044

@@ -1,0 +1,4 @@
+hanya bisa upload atau download file dengan ukuran kecil (< 1MB)
+RPC berorientasi pada transaksi bukan throughput
+tidak cocok untuk kirim file dengan ukuran besar
+untuk file dengan ukuran besar harus dihandle dengan base64 tetapi agak komplek

@@ -2,7 +2,7 @@
 import socket as sc
 
 # definisikan alamat IP bind dari server
-UDP_HOST = "192.168.1.7"
+UDP_HOST = "192.168.1.15"
 
 # definisikan port number untuk bind dari server
 UDP_PORT = 4044

@@ -2,7 +2,7 @@
 import socket as sc
 
 # definisikan IP untuk binding
-HOST = "192.168.1.3"
+HOST = "192.168.1.15"
 
 # definisikan port untuk binding
 PORT = 4044
@@ -25,7 +25,7 @@ print ('Connection address:', addr)
 
 # buka file bernama "file_didownload.txt
 # masih hard code, file harus ada dalam folder yang sama dengan script python
-f = open("IPC/file_didownload.txt", "rb")
+f = open("file_didownload.txt", "rb")
 
 try:
     # baca file tersebut sebesar buffer 

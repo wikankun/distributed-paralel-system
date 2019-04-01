@@ -2,7 +2,7 @@
 import socket as sc
 
 # definisikan IP untuk binding
-HOST = "192.168.1.8"
+HOST = "192.168.1.15"
 
 # definisikan port untuk binding
 PORT = 4044

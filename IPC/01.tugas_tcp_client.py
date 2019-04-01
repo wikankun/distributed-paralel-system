@@ -2,7 +2,7 @@
 import socket as sc
 
 # definisikan tujuan IP server
-HOST = "192.168.1.7"
+HOST = "192.168.1.15"
 
 # definisikan port dari server yang akan terhubung
 PORT = 4044

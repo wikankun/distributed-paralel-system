@@ -2,7 +2,7 @@
 import socket as sc
 
 # definisikan target IP server yang akan dituju
-UDP_HOST = "192.168.1.7"
+UDP_HOST = "192.168.1.15"
 
 # definisikan target port number server yang akan dituju
 UDP_PORT = 4044
