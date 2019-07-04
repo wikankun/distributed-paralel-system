@@ -1,3 +1,1 @@
-# JANGAN LUPA DI-**STAR**
-
-##### Kalau lupa nanti repository ini diprivate
+# Distributed and Paralel System
